@@ -1,0 +1,176 @@
+[
+ {
+  "en": "Powerup",
+  "zh": "道具",
+  "function": "Passive item acquired in a run; cannot be dropped",
+  "contexts": "pause tab, shop category, bundles, essence, gamble",
+  "rationale": "ETG official zh uses 道具; 强化 clashes with Upgrade 升级"
+ },
+ {
+  "en": "Upgrade",
+  "zh": "升级",
+  "function": "Powerup level-up",
+  "contexts": "Upgrade Bundle, pause",
+  "rationale": "kept"
+ },
+ {
+  "en": "PROP / props",
+  "zh": "物件",
+  "function": "Breakable scenery",
+  "contexts": "tutorial, settings, camp editor",
+  "rationale": "frees 道具"
+ },
+ {
+  "en": "Gamble (Powerup/Weapon/Shard)",
+  "zh": "…盲盒",
+  "function": "Pickup that rolls a random reward after jackpot anim",
+  "contexts": "shop, bundles, challenge rooms",
+  "rationale": "understandability: paid random, not betting"
+ },
+ {
+  "en": "Hit the Jackpot",
+  "zh": "碰碰运气",
+  "function": "Slogan under gamble pickups",
+  "contexts": "shop banner subtitle",
+  "rationale": "chance-based, short"
+ },
+ {
+  "en": "Uncommon",
+  "zh": "优秀",
+  "function": "Rarity tier 2",
+  "contexts": "weapon/powerup tags",
+  "rationale": "order 普通/优秀/稀有/超稀有/传说"
+ },
+ {
+  "en": "Ultra Rare",
+  "zh": "超稀有",
+  "function": "Rarity tier 4",
+  "contexts": "weapon/powerup tags",
+  "rationale": "CN game standard"
+ },
+ {
+  "en": "Rogue",
+  "zh": "老手",
+  "function": "Difficulty tier 4 of 8",
+  "contexts": "minimap label, difficulty select",
+  "rationale": "not genre name 肉鸽"
+ },
+ {
+  "en": "Close Range Sniper",
+  "zh": "近身拳击狙",
+  "function": "Melee sniper that punches with boxing glove",
+  "contexts": "weapon nameplate",
+  "rationale": "function + punch joke"
+ },
+ {
+  "en": "Gas",
+  "zh": "毒气",
+  "function": "Gas element",
+  "contexts": "element tag, buttons, soles",
+  "rationale": "气 alone = air"
+ },
+ {
+  "en": "Weptek",
+  "zh": "维普泰克",
+  "function": "Faction",
+  "contexts": "weapon/powerup names + flavor",
+  "rationale": "unify spelling"
+ },
+ {
+  "en": "Roffel",
+  "zh": "罗弗尔",
+  "function": "Sniper weapon",
+  "contexts": "weapon name + flavor",
+  "rationale": "unify spelling"
+ },
+ {
+  "en": "Shrampling",
+  "zh": "虾仔",
+  "note": "种族；虾形敌人/NPC",
+  "phase": 2
+ },
+ {
+  "en": "Imperiant",
+  "zh": "帝蚁",
+  "note": "种族；蚁特兰蒂斯帝国蚁人",
+  "phase": 2
+ },
+ {
+  "en": "Porko",
+  "zh": "猪猪",
+  "note": "种族",
+  "phase": 2
+ },
+ {
+  "en": "Gloob",
+  "zh": "格鲁布",
+  "note": "种族",
+  "phase": 2
+ },
+ {
+  "en": "Aquaxis",
+  "zh": "阿夸希斯",
+  "note": "种族",
+  "phase": 2
+ },
+ {
+  "en": "Flumpel",
+  "zh": "弗朗普尔",
+  "note": "种族",
+  "phase": 2
+ },
+ {
+  "en": "Coldoid",
+  "zh": "寒冰族",
+  "note": "冰系种族",
+  "phase": 2
+ },
+ {
+  "en": "Magmak",
+  "zh": "熔岩族",
+  "note": "火系种族",
+  "phase": 2
+ },
+ {
+  "en": "Tomto",
+  "zh": "汤姆托族",
+  "note": "种族",
+  "phase": 2
+ },
+ {
+  "en": "Shard",
+  "zh": "碎晶",
+  "note": "货币",
+  "phase": 2
+ },
+ {
+  "en": "Empyria",
+  "zh": "恩皮里亚",
+  "note": "云之国",
+  "phase": 2
+ },
+ {
+  "en": "Antlantis",
+  "zh": "蚁特兰蒂斯",
+  "note": "王国",
+  "phase": 2
+ },
+ {
+  "en": "Rebeamer",
+  "zh": "连射晶枪",
+  "note": "武器",
+  "phase": 2
+ },
+ {
+  "en": "Battlerattle",
+  "zh": "嘎嘎战枪",
+  "note": "武器",
+  "phase": 2
+ },
+ {
+  "en": "Karkamas",
+  "zh": "卡卡马斯",
+  "note": "教授",
+  "phase": 2
+ }
+]
