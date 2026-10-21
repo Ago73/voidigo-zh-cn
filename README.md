@@ -1,4 +1,6 @@
-# Voidigo 简体中文汉化补丁 v10（非官方）｜切屏优化 · 宋体12px像素字库 · 逐字换行 · 全文本含图鉴
+**《Voidigo》官方没有中文，只有英语和瑞典语。本补丁让中文玩家能完整游玩。**
+
+# Voidigo 简体中文汉化补丁 v10.1（非官方）｜切屏优化 · 宋体12px像素字库 · 逐字换行 · 全文本含图鉴
 
 为《Voidigo》（semiwork 开发）提供完整简体中文。**不含任何游戏文件**，只含二进制差分补丁，应用于你自己的正版游戏。
 
@@ -8,6 +10,16 @@
 - **中文逐字换行 + 避头尾**：中文可在任意字间断行，标点不出现在行首，不再塞多余空格。
 - **全文本汉化**：道具、武器、角色、对话旁白、教程、界面、联机大厅、片尾字幕，以及**图鉴（敌人、首领、场景物件）**。
 - 安装前校验原版哈希、自动备份，一键还原；已装 v9r 可直接覆盖升级。
+
+## 效果对比（截图待补）
+> 以下截图位待补充，同一场景英文原版与汉化版对照。
+
+| 场景 | 英文原版 | 汉化版 |
+|---|---|---|
+| 道具说明 | （待补：en_item.png） | （待补：zh_item.png） |
+| 菜单界面 | （待补：en_menu.png） | （待补：zh_menu.png） |
+| 图鉴 | （待补：en_bestiary.png） | （待补：zh_bestiary.png） |
+| Alt-Tab 切屏 | （待补：原版切屏闪烁） | （待补：修复后切屏） |
 
 ## 兼容版本
 仅支持当前 Steam 版（v1.1.0.1）：
@@ -20,16 +32,16 @@
 
 ## 安装
 1. 关闭游戏。
-2. 解压后双击 `patch\安装中文.bat`（或 `install.bat`）。
+2. 解压后双击 `patch\install.bat`（推荐）。`安装中文.bat` 功能相同，但部分旧解压工具会把中文文件名解成乱码，此时请用 `install.bat`。
 3. 自动查找 Steam 目录；找不到时会要求输入游戏目录，也可运行 `patcher.ps1 -GameDir "D:\...\Voidigo"`。
-4. 补丁会校验原版哈希 → 备份到 `游戏目录\zh_cn_backup\` → 生成汉化文件 → 校验结果哈希。
+4. 补丁会先校验自带 xdelta3.exe 的哈希，再校验原版哈希 → 备份到 `游戏目录\zh_cn_backup\` → 生成汉化文件 → 校验结果哈希。
 
 ## 卸载 / 还原
-双击 `patch\还原英文.bat`（或 `uninstall.bat`）从备份还原并校验；也可在 Steam 中验证游戏文件完整性。
+双击 `patch\uninstall.bat`（推荐，`还原英文.bat` 功能相同）从备份还原并校验。若汉化后 Steam 更新过游戏，还原会停止并提示改用 Steam“验证游戏文件的完整性”，不会用旧备份覆盖新文件。
 查看状态：`powershell -ExecutionPolicy Bypass -File patcher.ps1 -Mode verify`
 
 ## 目录
-- `patch/`：补丁程序（patcher.ps1、.bat、xdelta3.exe、*.xd3）
+- `patch/`：补丁程序，支持路径含方括号等特殊字符的游戏目录（patcher.ps1、.bat、xdelta3.exe、*.xd3）
 - `text/zh_final_v10.json`：英→中文本对照表；`glossary.*`：术语表；`cjk_charset.txt`：字库字符集
 - `scripts/`：字库烘焙 `bake_cjk_atlas4.py`；exe 字符串重定位 `patch_exe_reloc_v9.py`（+`v9_new_keys.json`）与合成 `compose_v10.py`；UndertaleModTool 字体导入 `import_cjk_font_v.csx`、`import_cjk_font.csx`，构建脚本 `build_cn_v.cmd`
 
