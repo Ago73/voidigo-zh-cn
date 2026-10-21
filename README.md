@@ -1,6 +1,6 @@
 **《Voidigo》官方没有中文，只有英语和瑞典语。本补丁让中文玩家能完整游玩。**
 
-# Voidigo 简体中文汉化补丁 v10.1（非官方）｜切屏优化 · 宋体12px像素字库 · 逐字换行 · 全文本含图鉴
+# Voidigo 简体中文汉化补丁 v11（非官方）｜切屏优化 · 宋体12px像素字库 · 逐字换行 · 全文本（含敌人资料文本）
 
 为《Voidigo》（semiwork 开发）提供完整简体中文。**不含任何游戏文件**，只含二进制差分补丁，应用于你自己的正版游戏。
 
@@ -8,18 +8,20 @@
 - **切屏优化**：Alt-Tab 切出切入不再白屏闪烁；无边框窗口稳定，不会在窗口化/有边框之间来回闪烁。
 - **宋体 12px 像素字库**：清晰锐利，贴合游戏像素风格（2,542 个汉字及符号）。
 - **中文逐字换行 + 避头尾**：中文可在任意字间断行，标点不出现在行首，不再塞多余空格。
-- **全文本汉化**：道具、武器、角色、对话旁白、教程、界面、联机大厅、片尾字幕，以及**图鉴（敌人、首领、场景物件）**。
-- 安装前校验原版哈希、自动备份，一键还原；已装 v9r 可直接覆盖升级。
+- **全文本汉化**：道具、武器、角色、对话旁白、教程、界面、联机大厅、片尾字幕，以及**敌人资料文本（敌人、首领、场景物件）**。
+- 安装前校验原版哈希、自动备份，一键还原；已装 v9r 或 v10 可直接覆盖升级。
 
-## 效果对比（截图待补）
-> 以下截图位待补充，同一场景英文原版与汉化版对照。
+## 效果对比
+> 汉化版截图来自实机游戏。英文原版对照图待补。
 
 | 场景 | 英文原版 | 汉化版 |
 |---|---|---|
-| 道具说明 | （待补：en_item.png） | （待补：zh_item.png） |
-| 菜单界面 | （待补：en_menu.png） | （待补：zh_menu.png） |
-| 图鉴 | （待补：en_bestiary.png） | （待补：zh_bestiary.png） |
-| Alt-Tab 切屏 | （待补：原版切屏闪烁） | （待补：修复后切屏） |
+| 主菜单 | 待补 | ![主菜单](docs/screenshots/zh_menu.png) |
+| 设置 | 待补 | ![设置](docs/screenshots/zh_settings.png) |
+| 角色选择 | 待补 | ![角色选择](docs/screenshots/zh_charselect.png) |
+| 武器说明 | 待补 | ![武器说明](docs/screenshots/zh_weapon.png) |
+| 精华提示 | 待补 | ![精华提示](docs/screenshots/zh_essence.png) |
+| Alt-Tab 切屏 | 待补 | 待补 |
 
 ## 兼容版本
 仅支持当前 Steam 版（v1.1.0.1）：
@@ -42,8 +44,8 @@
 
 ## 目录
 - `patch/`：补丁程序，支持路径含方括号等特殊字符的游戏目录（patcher.ps1、.bat、xdelta3.exe、*.xd3）
-- `text/zh_final_v10.json`：英→中文本对照表；`glossary.*`：术语表；`cjk_charset.txt`：字库字符集
-- `scripts/`：字库烘焙 `bake_cjk_atlas4.py`；exe 字符串重定位 `patch_exe_reloc_v9.py`（+`v9_new_keys.json`）与合成 `compose_v10.py`；UndertaleModTool 字体导入 `import_cjk_font_v.csx`、`import_cjk_font.csx`，构建脚本 `build_cn_v.cmd`
+- `text/zh_final_v11.json`：英→中文本对照表；`glossary.*`：术语表；`cjk_charset.txt`：字库字符集
+- `scripts/`：字库烘焙 `bake_cjk_atlas4.py`；exe 字符串重定位 `patch_exe_reloc_v9.py`（+`v9_new_keys.json`）与合成 `compose_v11.py`（旧版 `compose_v10.py`）；UndertaleModTool 字体导入 `import_cjk_font_v.csx`、`import_cjk_font.csx`，构建脚本 `build_cn_v.cmd`
 
 ## 致谢
 汉化：Plan5。
@@ -54,6 +56,6 @@
 
 ---
 ## English (short)
-Unofficial Simplified Chinese fan translation for Voidigo (by semiwork), v10. Highlights: alt-tab without white flash & stable borderless window; SimSun 12px pixel font; per-character CJK line breaking with kinsoku; full text including the bestiary. NO game files included, binary deltas only.
+Unofficial Simplified Chinese fan translation for Voidigo (by semiwork), v11. Highlights: alt-tab without white flash & stable borderless window; SimSun 12px pixel font; per-character CJK line breaking with kinsoku; full text including enemy data text. NO game files included, binary deltas only.
 Install: close the game, run `patch\install.bat` (checks vanilla SHA256 above, backs up to `<game>\zh_cn_backup\`, applies xdelta, verifies output). Uninstall: `patch\uninstall.bat` or verify files in Steam.
 Translation: Plan5. Game and all assets © semiwork. xdelta3 is GPL (source link above).
