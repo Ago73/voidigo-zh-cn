@@ -1,10 +1,10 @@
-// Headless: append Fusion Pixel CJK glyphs to fnt_default on a new embedded texture; save data.win.cn
+﻿// Headless: append Fusion Pixel CJK glyphs to fnt_default on a new embedded texture; save data.win.cn
 using System.Text;
 using System.Linq;
 using ImageMagick;
 using UndertaleModLib.Util;
 EnsureDataLoaded();
-string dir = @"C:\Users\35036\voidigo-l10n\";
+string dir = System.IO.Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.UserProfile), "voidigo-l10n") + "\\";
 string log = dir + "import_cjk_" + Environment.GetEnvironmentVariable("CJK_V") + ".log";
 File.WriteAllText(log, "start\n");
 var f = Data.Fonts.First(x => x.Name.Content == "fnt_default");
